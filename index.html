@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>My Goals for the Year</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vaction">Planning a Vaction</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <main>
+        <article id="html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <p>This is my first web pages</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/ben-kim-AzUGFu2xSks-unsplash.jpg" alt="HTML logo" title="I am learning HTML5" width="300"
+                    height="300">
+                <figure>
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt; h1 &gt; Hello World &lt; /h1 &gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Let me tell you how;</p>
+                <ol>
+                    <li>...I learn more about web dev</li>
+                    <li>...I plan out my schedule</li>
+                    <li>...I use resources from <abbr title="Mozilla Developer Network"><a
+                                href="https://developer.mozila.org/">MDM</a></abbr></li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                        <p>I start at <time datetime="08:00">8 am</time>and I write code for <time datetime="PT3H">3
+                                hours</time>every morning</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+        <article id="contact">
+
+        </article>
+    </main>
+    <table>
+        <caption>My daily Schedule</caption>
+        <thead>
+        <tr>
+            <th></th>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Morning</th>
+            <td><time datetime="08:00">8am</time>-<time datetime="11:00">11 am</time></td>
+            <td>Write Code</td>
+        </tr>
+        <tr>
+            <th scope="row">Break</th>
+            <td><time datetime="11:00">1am</time>-<time datetime="12:00">12 am</time></td>
+            <td>lunch break</td>
+        </tr>
+        <tr>
+            <th scope="row">Afternoon</th>
+            <td><time datetime="12:00">12am</time>-<time datetime="18:00">6 am</time></td>
+            <td>Study time</td>
+        </tr>
+        <tr>
+            <th scope="row">Evening</th>
+            <td rowspan="2">All other time</td>
+            <td>Eat</td>
+            </tr>
+            <tr>
+            <th scope="row">Night</th>
+            <td>Sleep</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Eat,Sleep,Code on for Everyday</td>
+                </tr>
+            </tfoot>
+    </table>
+    <hr>
+    <article id="contact">
+        <h2>Contact me:</h2>
+        <p>
+            I Would like to hear from you
+        </p>
+        <form action="https://httpbin.org/get" method="get">
+           <fieldset>
+            <legend>Personal info</legend>
+            <p>
+                <label for="firstName">firstName</label>
+                <input type="text" name="firstName" id="firstName" placeholder="bala" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="lastName">lastName</label>
+                <input type="text" name="lastName" id="lastName" placeholder="krishnan" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="password">password</label>
+                <input type="password" name="password" placeholder="password" id="password" required>
+            </p>
+            <p>
+                <label for="phone">phone</label>
+                <input type="tel" name="phone" placeholder="999999999" required>
+            </p>
+            <p>
+                <label for="decade">Fav decade</label>
+                <input type="number" name="decade" id="decade" min="2020" max="1980" value="1980" step="10">
+            </p>
+            <p>
+                <!--label for="content">Fav Content from Dhudu</label>
+                <select name="content" id="content" multiple size="5">
+                    <optgroup label="Earn money">
+                    <option value="frontend">Frotend</option>
+                    <option value="backend">Backend</option>
+                    <option value="blockChain" selected>BlockChain</option>
+                  </optgroup>
+                  <optgroup label="Grow money">
+                    <option value="ShareMarket">ShareMarket</option>
+                    <option value="Trading">Trading</option>
+                    </optgroup>
+                    <optgroup label="Give money">
+                    <option value="donate">How to donate</option>
+                </optgroup>
+                </select-->
+            </p>
+            <p>
+                <label for="content">Fav Content from Dhudu</label>
+                <input type="text" name="content" id="content" list="content-list">
+                    <datalist id="content-list">
+                        <option value="frontend"></option>
+                        <option value="backend"></option>
+                        <option value="ai"></option>
+                        <option value="blockchain"></option>
+                        <option value="sharemarket"></option>
+                        <option value="trading"></option>
+                        <option value="denate"></option>
+                    </datalist>
+            </p>
+        </fieldset>
+        <p>
+        <fieldset>
+            <p>
+                <legend>Your fav food</legend>
+                <p>
+                <input type="radio" name="food" id="chicken" value="chicken">
+                <label for="chicken">chicken</label>
+            </p>
+            </p>
+            <p>
+                <input type="radio" name="food" id="mutton" value="mutton">
+                <label for="mutton">mutton</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="others" value="others">
+                <label for="others">others</label>
+            </p>
+        </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <p>
+                    <legend>Your fav food</legend>
+                    <p>
+                    <input type="checkbox" name="food" id="chicken" value="chicken">
+                    <label for="chicken">chicken</label>
+                </p>
+                </p>
+                <p>
+                    <input type="checkbox" name="food" id="mutton" value="mutton">
+                    <label for="mutton">mutton</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="food" id="others" value="others">
+                    <label for="others">others</label>
+                </p>
+            </fieldset>
+        </p>
+        <br>
+            <fieldset>
+                <legend>Send me a note</legend>
+                <label for="message">Your message</label>
+                <p>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            </p>
+            <p>
+                <button type="reset">Reset</button>
+            </p>
+            <br>      <br>      <br>      <br>      <br>      <br>
+        </form>
+    </article>
+    <br>
+</body>
+</html>
+
+
+
+
+
+
